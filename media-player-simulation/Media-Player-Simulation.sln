@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.14.36310.24 d17.14
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TwelfthConsoleApp", "TwelfthConsoleApp\TwelfthConsoleApp.csproj", "{1CE132AC-34C8-4EC7-9EE5-3E9D9C9AF2C3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "media-player-simulation", "media-player-simulation\media-player-simulation.csproj", "{1CE132AC-34C8-4EC7-9EE5-3E9D9C9AF2C3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
