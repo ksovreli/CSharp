@@ -1,5 +1,7 @@
-﻿using SKA_Holding.Data;
-using SKA_Holding.Models;
+﻿using SKA_Holding.Models;
+using SKA_Holding.Services;
+
+IMovieService movieService = new MovieService();
 
 Movie movie = new Movie()
 {
@@ -12,24 +14,31 @@ Movie movie = new Movie()
     ScreenWriterId = 1
 };
 
-ImdbContext dbContext = new();
-await CreateMovie(dbContext, movie);
+await movieService.Create(movie);
+Console.WriteLine("Movie created successfully.\n");
 
-Movie savedMovie = ReadMovies(dbContext, 1);
-Console.WriteLine(savedMovie.Title);
-static async Task CreateMovie(ImdbContext dbContext, Movie movie)
+await Task.Delay(2000);
+
+Console.WriteLine("All movies in the database: ");
+var movies = movieService.GetMovies();
+foreach (var m in movies)
 {
-    dbContext.Add(movie);
-    await dbContext.SaveChangesAsync();
+    Console.WriteLine($"ID: {m.MovieId}");
+    Console.WriteLine($"Title: {m.Title}");
+    Console.WriteLine($"Year: {m.ReleaseYear}");
+    Console.WriteLine($"Duration: {m.Duration} min");
+    Console.WriteLine($"Rating: {m.Rating}");
+    Console.WriteLine($"Description: {m.Description}");
+    Console.WriteLine($"Director ID: {m.DirectorId}");
+    Console.WriteLine($"Screenwriter ID: {m.ScreenWriterId}");
+    Console.WriteLine(new string('-', 50));
 }
 
-static Movie ReadMovies(ImdbContext dbContext, int id)
-{
-    var result = dbContext.Movie.Find(id);
+movie.Title = "Wonder (new)";
+movieService.Update(movie.MovieId, movie);
+Console.WriteLine("Movie updated successfully.\n");
 
-    if (result != null)
-    {
-        return result;
-    }
-    throw new ArgumentOutOfRangeException(nameof(id));
-}
+await Task.Delay(2000);
+
+movieService.Delete(movie.MovieId);
+Console.WriteLine("Movie deleted successfully.\n");
