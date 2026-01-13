@@ -89,5 +89,3 @@ The project demonstrates practical usage of:
    - Add PRIMARY KEY / FOREIGN KEY constraints  
 4. (Optional) Run **INSERT** scripts with sample data  
 5. Explore the example **SELECT** queries
-
-## 📁 Project Structure (suggested)
