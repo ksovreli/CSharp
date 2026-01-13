@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("generic-collections-linq-queries")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+51c8b19e27c3577426ba71bf3b5f64235959d1b3")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+906cee3517898fcaa64e70feb543558b7ee5779e")]
 [assembly: System.Reflection.AssemblyProductAttribute("generic-collections-linq-queries")]
 [assembly: System.Reflection.AssemblyTitleAttribute("generic-collections-linq-queries")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -31,7 +31,7 @@ foreach (var m in movies)
     Console.WriteLine($"Description: {m.Description}");
     Console.WriteLine($"Director ID: {m.DirectorId}");
     Console.WriteLine($"Screenwriter ID: {m.ScreenWriterId}");
-    Console.WriteLine(new string('-', 50));
+    Console.WriteLine("--------------------------------------------------");
 }
 
 movie.Title = "Wonder (new)";

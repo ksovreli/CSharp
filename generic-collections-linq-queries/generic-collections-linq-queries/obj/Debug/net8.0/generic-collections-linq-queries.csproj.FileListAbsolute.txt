@@ -1,0 +1,15 @@
+C:\Users\admin\source\repos\csharp\generic-collections-linq-queries\generic-collections-linq-queries\bin\Debug\net8.0\generic-collections-linq-queries.exe
+C:\Users\admin\source\repos\csharp\generic-collections-linq-queries\generic-collections-linq-queries\bin\Debug\net8.0\generic-collections-linq-queries.deps.json
+C:\Users\admin\source\repos\csharp\generic-collections-linq-queries\generic-collections-linq-queries\bin\Debug\net8.0\generic-collections-linq-queries.runtimeconfig.json
+C:\Users\admin\source\repos\csharp\generic-collections-linq-queries\generic-collections-linq-queries\bin\Debug\net8.0\generic-collections-linq-queries.dll
+C:\Users\admin\source\repos\csharp\generic-collections-linq-queries\generic-collections-linq-queries\bin\Debug\net8.0\generic-collections-linq-queries.pdb
+C:\Users\admin\source\repos\csharp\generic-collections-linq-queries\generic-collections-linq-queries\obj\Debug\net8.0\generic-collections-linq-queries.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\admin\source\repos\csharp\generic-collections-linq-queries\generic-collections-linq-queries\obj\Debug\net8.0\generic-collections-linq-queries.AssemblyInfoInputs.cache
+C:\Users\admin\source\repos\csharp\generic-collections-linq-queries\generic-collections-linq-queries\obj\Debug\net8.0\generic-collections-linq-queries.AssemblyInfo.cs
+C:\Users\admin\source\repos\csharp\generic-collections-linq-queries\generic-collections-linq-queries\obj\Debug\net8.0\generic-collections-linq-queries.csproj.CoreCompileInputs.cache
+C:\Users\admin\source\repos\csharp\generic-collections-linq-queries\generic-collections-linq-queries\obj\Debug\net8.0\generic-collections-linq-queries.sourcelink.json
+C:\Users\admin\source\repos\csharp\generic-collections-linq-queries\generic-collections-linq-queries\obj\Debug\net8.0\generic-collections-linq-queries.dll
+C:\Users\admin\source\repos\csharp\generic-collections-linq-queries\generic-collections-linq-queries\obj\Debug\net8.0\refint\generic-collections-linq-queries.dll
+C:\Users\admin\source\repos\csharp\generic-collections-linq-queries\generic-collections-linq-queries\obj\Debug\net8.0\generic-collections-linq-queries.pdb
+C:\Users\admin\source\repos\csharp\generic-collections-linq-queries\generic-collections-linq-queries\obj\Debug\net8.0\generic-collections-linq-queries.genruntimeconfig.cache
+C:\Users\admin\source\repos\csharp\generic-collections-linq-queries\generic-collections-linq-queries\obj\Debug\net8.0\ref\generic-collections-linq-queries.dll
