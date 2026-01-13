@@ -23,7 +23,7 @@ namespace SKA_Holding.Services
         }
         public void Update(int id, Movie movie)
         {
-            var existingMovie = context.Movie.FirstOrDefault(m => m.MovieId == id);
+            var existingMovie = context.Movie.Find(id);
             if (existingMovie != null)
             {
                 existingMovie.Title = movie.Title;
@@ -39,7 +39,7 @@ namespace SKA_Holding.Services
 
         public void Delete(int id)
         {
-            var movie = context.Movie.FirstOrDefault(m => m.MovieId == id);
+            var movie = context.Movie.Find(id);
             if (movie != null)
             {
                 context.Movie.Remove(movie);
