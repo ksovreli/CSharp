@@ -1,4 +1,4 @@
-# 🎬 IMDB-like Movie Database Project
+# 🎬 IMDB | Sql Management Studio Project
 
 A relational database project inspired by **IMDb**, implemented in **Microsoft SQL Server**.
 
@@ -79,3 +79,4 @@ The project demonstrates practical usage of:
 - **WHERE**, **ORDER BY**, **HAVING** clauses  
 - Complex filtering and sorting  
 - Basic examples of subqueries
+
