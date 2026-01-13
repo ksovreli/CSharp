@@ -78,14 +78,4 @@ The project demonstrates practical usage of:
 - **GROUP BY** + aggregates: **COUNT**, **AVG**, **MAX**, **MIN**  
 - **WHERE**, **ORDER BY**, **HAVING** clauses  
 - Complex filtering and sorting  
-- Basic examples of subqueries (if implemented)
-
-## 🚀 Getting Started
-
-1. Install **Microsoft SQL Server** (Express edition is fine)  
-2. Create a new database (e.g. `IMDB_Project`)  
-3. Run the **DDL scripts** in this order:  
-   - Create tables  
-   - Add PRIMARY KEY / FOREIGN KEY constraints  
-4. (Optional) Run **INSERT** scripts with sample data  
-5. Explore the example **SELECT** queries
+- Basic examples of subqueries
