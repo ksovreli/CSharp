@@ -1,4 +1,6 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using System;
+using System.Collections.Generic;
+using Microsoft.EntityFrameworkCore;
 using SKA_Holding.Models;
 
 namespace SKA_Holding.Data;
@@ -18,13 +20,19 @@ public partial class ImdbContext : DbContext
 
     public virtual DbSet<Genre> Genres { get; set; }
 
-    public virtual DbSet<Movie> Movie { get; set; }
+    public virtual DbSet<Movie> Movies { get; set; }
 
     public virtual DbSet<MovieDirector> MovieDirectors { get; set; }
 
     public virtual DbSet<MovieGenre> MovieGenres { get; set; }
 
+    public virtual DbSet<Rating> Ratings { get; set; }
+
+    public virtual DbSet<Review> Reviews { get; set; }
+
     public virtual DbSet<ScreenWriter> ScreenWriters { get; set; }
+
+    public virtual DbSet<User> Users { get; set; }
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         => optionsBuilder.UseSqlServer("Server=DESKTOP-TC01TCH;Database=IMDB;Trusted_Connection=True;TrustServerCertificate=True;");
@@ -89,9 +97,44 @@ public partial class ImdbContext : DbContext
                 .HasConstraintName("FK__MovieGenr__Movie__5AEE82B9");
         });
 
+        modelBuilder.Entity<Rating>(entity =>
+        {
+            entity.HasKey(e => e.RatingId).HasName("PK__Rating__FCCDF87C7312784A");
+
+            entity.Property(e => e.RatedAt).HasDefaultValueSql("(getdate())");
+
+            entity.HasOne(d => d.Movie).WithMany(p => p.Ratings)
+                .OnDelete(DeleteBehavior.ClientSetNull)
+                .HasConstraintName("FK__Rating__MovieId__1DB06A4F");
+
+            entity.HasOne(d => d.User).WithMany(p => p.Ratings)
+                .OnDelete(DeleteBehavior.ClientSetNull)
+                .HasConstraintName("FK__Rating__RatedAt__1CBC4616");
+        });
+
+        modelBuilder.Entity<Review>(entity =>
+        {
+            entity.HasKey(e => e.ReviewId).HasName("PK__Reviews__74BC79CE0C302F40");
+
+            entity.Property(e => e.PublishedAt).HasDefaultValueSql("(getdate())");
+
+            entity.HasOne(d => d.Movie).WithMany(p => p.Reviews)
+                .OnDelete(DeleteBehavior.ClientSetNull)
+                .HasConstraintName("FK__Reviews__MovieId__22751F6C");
+
+            entity.HasOne(d => d.User).WithMany(p => p.Reviews)
+                .OnDelete(DeleteBehavior.ClientSetNull)
+                .HasConstraintName("FK__Reviews__Publish__2180FB33");
+        });
+
         modelBuilder.Entity<ScreenWriter>(entity =>
         {
             entity.HasKey(e => e.ScreenWriterId).HasName("PK__ScreenWr__9F2DA933125034B3");
+        });
+
+        modelBuilder.Entity<User>(entity =>
+        {
+            entity.HasKey(e => e.UserId).HasName("PK__User__1788CC4C9C8BA81D");
         });
 
         OnModelCreatingPartial(modelBuilder);

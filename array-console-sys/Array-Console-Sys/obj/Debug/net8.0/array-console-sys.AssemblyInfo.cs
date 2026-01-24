@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("array-console-sys")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+28f1fcbcba1c5efc28bd25a242b8c8865b4061aa")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f2f6bc7c208650852a5ef44df6291e5440832905")]
 [assembly: System.Reflection.AssemblyProductAttribute("array-console-sys")]
 [assembly: System.Reflection.AssemblyTitleAttribute("array-console-sys")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

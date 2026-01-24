@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("scaffold-sys")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7d2f7b605ec0e3861cec23f8d3e553bd23e9e263")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f2f6bc7c208650852a5ef44df6291e5440832905")]
 [assembly: System.Reflection.AssemblyProductAttribute("scaffold-sys")]
 [assembly: System.Reflection.AssemblyTitleAttribute("scaffold-sys")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

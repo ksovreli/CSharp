@@ -1,0 +1,71 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\admin\\source\\repos\\csharp\\delegates-lambda-sys\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A0FFA1AA-EF8E-44BA-9F29-899924E1A9E1}|delegates-lambda-sys\\delegates-lambda-sys.csproj|c:\\users\\admin\\source\\repos\\csharp\\delegates-lambda-sys\\delegates-lambda-sys\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A0FFA1AA-EF8E-44BA-9F29-899924E1A9E1}|delegates-lambda-sys\\delegates-lambda-sys.csproj|solutionrelative:delegates-lambda-sys\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A0FFA1AA-EF8E-44BA-9F29-899924E1A9E1}|delegates-lambda-sys\\delegates-lambda-sys.csproj|c:\\users\\admin\\source\\repos\\csharp\\delegates-lambda-sys\\delegates-lambda-sys\\models\\bankingsystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A0FFA1AA-EF8E-44BA-9F29-899924E1A9E1}|delegates-lambda-sys\\delegates-lambda-sys.csproj|solutionrelative:delegates-lambda-sys\\models\\bankingsystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A0FFA1AA-EF8E-44BA-9F29-899924E1A9E1}|delegates-lambda-sys\\delegates-lambda-sys.csproj|c:\\users\\admin\\source\\repos\\csharp\\delegates-lambda-sys\\delegates-lambda-sys\\models\\keylistener.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A0FFA1AA-EF8E-44BA-9F29-899924E1A9E1}|delegates-lambda-sys\\delegates-lambda-sys.csproj|solutionrelative:delegates-lambda-sys\\models\\keylistener.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 111,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "KeyListener.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\csharp\\delegates-lambda-sys\\delegates-lambda-sys\\models\\KeyListener.cs",
+              "RelativeDocumentMoniker": "delegates-lambda-sys\\models\\KeyListener.cs",
+              "ToolTip": "C:\\Users\\admin\\source\\repos\\csharp\\delegates-lambda-sys\\delegates-lambda-sys\\models\\KeyListener.cs",
+              "RelativeToolTip": "delegates-lambda-sys\\models\\KeyListener.cs",
+              "ViewState": "AgIAACgAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-13T13:21:11.69Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "BankingSystem.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\csharp\\delegates-lambda-sys\\delegates-lambda-sys\\models\\BankingSystem.cs",
+              "RelativeDocumentMoniker": "delegates-lambda-sys\\models\\BankingSystem.cs",
+              "ToolTip": "C:\\Users\\admin\\source\\repos\\csharp\\delegates-lambda-sys\\delegates-lambda-sys\\models\\BankingSystem.cs",
+              "RelativeToolTip": "delegates-lambda-sys\\models\\BankingSystem.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-13T13:21:10.259Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\source\\repos\\csharp\\delegates-lambda-sys\\delegates-lambda-sys\\Program.cs",
+              "RelativeDocumentMoniker": "delegates-lambda-sys\\Program.cs",
+              "ToolTip": "C:\\Users\\admin\\source\\repos\\csharp\\delegates-lambda-sys\\delegates-lambda-sys\\Program.cs",
+              "RelativeToolTip": "delegates-lambda-sys\\Program.cs",
+              "ViewState": "AgIAACcAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-13T13:21:03.735Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
