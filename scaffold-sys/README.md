@@ -1,89 +1,82 @@
-🎬 IMDB Database Project
-📌 პროექტის აღწერა
+# 🎬 IMDB | Sql Management Studio Project
 
-ეს პროექტი წარმოადგენს IMDB-ის მსგავს მონაცემთა ბაზას, რომელიც შექმნილია Microsoft SQL Server-ში.
-მონაცემთა ბაზა განკუთვნილია ფილმების, რეჟისორების, სცენარისტების, მსახიობების, ჟანრებისა და მომხმარებლების შესახებ ინფორმაციის შესანახად და დასამუშავებლად.
+A relational database project inspired by **IMDb**, implemented in **Microsoft SQL Server**.
 
-პროექტის მიზანია რელაციური მონაცემთა ბაზების, PRIMARY KEY / FOREIGN KEY კავშირების, JOIN-ების, GROUP BY და აგრეგატული ფუნქციების პრაქტიკული გამოყენება.
+This database stores and manages information about **movies**, **directors**, **screenwriters**, **actors**, **genres**, and **users**.  
+The main goal of the project is to practice key relational database concepts:
 
-🧱 მონაცემთა ბაზის სტრუქტურა
+- Table design and normalization
+- **PRIMARY KEY** / **FOREIGN KEY** constraints
+- Various types of **JOIN**s (INNER, LEFT, multi-table)
+- **GROUP BY** + aggregate functions (**AVG**, **COUNT**, etc.)
+- Filtering (**WHERE**), sorting (**ORDER BY**), and complex queries
 
-პროექტი შეიცავს შემდეგ ცხრილებს:
+## 📊 Database Schema
 
-1️⃣ MovieDirector
+### Tables
 
-DirectorId (PK)
-DirectorName
-DirectorSurname
+1. **MovieDirector**  
+   - `DirectorId` **INT** PRIMARY KEY  
+   - `DirectorName` **VARCHAR**  
+   - `DirectorSurname` **VARCHAR**
 
-2️⃣ ScreenWriter
+2. **ScreenWriter**  
+   - `ScreenWriterId` **INT** PRIMARY KEY  
+   - `ScreenWriterName` **VARCHAR**  
+   - `ScreenWriterSurname` **VARCHAR**
 
-ScreenWriterId (PK)
-ScreenWriterName
-ScreenWriterSurname
+3. **Movie** (core table)  
+   - `MovieId` **INT** PRIMARY KEY  
+   - `DirectorId` **INT** FOREIGN KEY → MovieDirector  
+   - `ScreenWriterId` **INT** FOREIGN KEY → ScreenWriter  
+   - `Title` **VARCHAR**  
+   - `ReleaseYear` **INT**  
+   - `Duration` **INT** (in minutes)  
+   - `Rating` **DECIMAL(3,1)**  
+   - `Description` **TEXT** / **VARCHAR(MAX)**
 
-3️⃣ Movie
+4. **Actor**  
+   - `ActorId` **INT** PRIMARY KEY  
+   - `ActorName` **VARCHAR**  
+   - `ActorSurname` **VARCHAR**
 
-ინახავს ფილმების ძირითად ინფორმაციას
-MovieId (PK)
-DirectorId (FK)
-ScreenWriterId (FK)
-Title
-ReleaseYear
-Duration
-Rating
-Description
+5. **MovieActor** (junction table – many-to-many)  
+   - `MovieId` **INT** FOREIGN KEY → Movie  
+   - `ActorId` **INT** FOREIGN KEY → Actor  
+   - **Composite PRIMARY KEY**: `(MovieId, ActorId)`
 
-4️⃣ Actor
+6. **Genre**  
+   - `GenreId` **INT** PRIMARY KEY  
+   - `GenreName` **VARCHAR** (e.g. Action, Drama, Comedy…)
 
-ActorId (PK)
-ActorName
-ActorSurname
+7. **MovieGenre** (junction table – many-to-many)  
+   - `MovieGenreId` **INT** PRIMARY KEY (or composite PK: MovieId + GenreId)  
+   - `MovieId` **INT** FOREIGN KEY → Movie  
+   - `GenreId` **INT** FOREIGN KEY → Genre
 
-5️⃣ MovieActor
+8. **User**  
+   - `UserId` **INT** PRIMARY KEY  
+   - `Username` **VARCHAR**  
+   - `Email` **VARCHAR**  
+   - `JoinDate` **DATE** / **DATETIME**
 
-Many-to-Many კავშირი ფილმებსა და მსახიობებს შორის
-MovieId (FK)
-ActorId (FK)
-Composite Primary Key (MovieId, ActorId)
+### 🔗 Relationships
 
-6️⃣ Genre
+- **Movie** → **MovieDirector** (Many-to-One)  
+- **Movie** → **ScreenWriter** (Many-to-One)  
+- **Movie** ↔ **Actor** (Many-to-Many via **MovieActor**)  
+- **Movie** ↔ **Genre** (Many-to-Many via **MovieGenre**)
 
-ინახავს ჟანრებს
-GenreId (PK)
-GenreName
+All relationships are enforced using **FOREIGN KEY** constraints to maintain **referential integrity**.
 
-7️⃣ MovieGenre
+## 🧪 Implemented SQL Features & Queries
 
-Many-to-Many კავშირი ფილმებსა და ჟანრებს შორის
-MovieGenreId (PK)
-MovieId (FK)
-GenreId (FK)
+The project demonstrates practical usage of:
 
-8️⃣ User
+- **INNER JOIN** and **LEFT JOIN**  
+- Multi-table **JOIN**s (3+ tables)  
+- **GROUP BY** + aggregates: **COUNT**, **AVG**, **MAX**, **MIN**  
+- **WHERE**, **ORDER BY**, **HAVING** clauses  
+- Complex filtering and sorting  
+- Basic examples of subqueries
 
-UserId (PK)
-Username
-Email
-JoinDate
-
-🔗 Connections
-
-Movie → MovieDirector (Many-to-One)
-Movie → ScreenWriter (Many-to-One)
-Movie ↔ Actor (Many-to-Many)
-Movie ↔ Genre (Many-to-Many)
-ყველა კავშირი დაცულია FOREIGN KEY constraint-ებით, რაც უზრუნველყოფს მონაცემთა მთლიანობას.
-
-🧪 შესრულებული მოთხოვნები (SQL Queries)
-
-Project includes:
-
-INNER JOIN
-LEFT JOIN
-GROUP BY
-AVG, COUNT
-
-WHERE, ORDER BY
-
-რთული JOIN რამდენიმე ცხრილზე ერთდროულად
