@@ -3,9 +3,9 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 
 namespace Logic_Restaurant_Razor_App.Pages
 {
-    public class RestaurantModel : PageModel
+    public class CountriesModel : PageModel
     {
-        public string Name { get; set; } = "Step Restaurant Products";
+        public string Countries { get; set; } = "Countries";
         public void OnGet()
         {
         }

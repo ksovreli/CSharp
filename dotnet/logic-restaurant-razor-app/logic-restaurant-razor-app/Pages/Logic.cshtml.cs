@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
-namespace webapp.Pages
+namespace Logic_Restaurant_Razor_App.Pages.Pages
 {
     public class LogicModel : PageModel
     {

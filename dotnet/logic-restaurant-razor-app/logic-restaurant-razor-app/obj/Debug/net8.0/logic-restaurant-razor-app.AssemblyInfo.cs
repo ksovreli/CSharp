@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("logic-restaurant-razor-app")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6dbf3ac006e0e348849419a2ded232064b6346b2")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8ff8ea9c2de58bd53f8f97e7eefc8b783ca86bbb")]
 [assembly: System.Reflection.AssemblyProductAttribute("logic-restaurant-razor-app")]
 [assembly: System.Reflection.AssemblyTitleAttribute("logic-restaurant-razor-app")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

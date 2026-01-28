@@ -1,32 +1,33 @@
 ﻿@page
-@model webapp.Pages.RestaurantModel
+@model Logic_Restaurant_Razor_App.Pages.RestaurantModel
 @{
-	ViewData["Title"] = "Restaurant Page";
+    ViewData["Title"] = "Restaurant Page";
 }
 
-<h2>Welcome to @Model.Name!</h2>
+<h2 class="restaurant-title">Welcome to @Model.Name!</h2>
+
 <div class="restaurant-container">
-	<div class="restaurant-info">
-		<img src="https://course-jsbasic.javascript.ru/assets/products/laab_kai_chicken_salad.png" alt="Alternate Text" />
-		<h3>Laab kai chicken salad</h3>
-		<p>Spiciness: 2</p>
-		<p>$ 10</p>
-		<button>Add To Cart</button>
-	</div>
+    <div class="restaurant-card">
+        <img src="https://course-jsbasic.javascript.ru/assets/products/laab_kai_chicken_salad.png" alt="Laab Kai Chicken Salad" />
+        <h3>Laab Kai Chicken Salad</h3>
+        <p>Spiciness: 2 🌶️</p>
+        <p class="price">$10</p>
+        <button class="btn">Add To Cart</button>
+    </div>
 
-	<div class="restaurant-info">
-		<img src="https://course-jsbasic.javascript.ru/assets/products/som_tam_papaya_salad.png" alt="Alternate Text" />
-		<h3>Som tam papaya salad</h3>
-		<p>Spiciness: 0</p>
-		<p>$ 9.5</p>
-		<button>Add To Cart</button>
-	</div>
+    <div class="restaurant-card">
+        <img src="https://course-jsbasic.javascript.ru/assets/products/som_tam_papaya_salad.png" alt="Som Tam Papaya Salad" />
+        <h3>Som Tam Papaya Salad</h3>
+        <p>Spiciness: 0 🌶️</p>
+        <p class="price">$9.50</p>
+        <button class="btn">Add To Cart</button>
+    </div>
 
-	<div class="restaurant-info">
-		<img src="https://course-jsbasic.javascript.ru/assets/products/sweet_n_sour.png" alt="Alternate Text" />
-		<h3>Sweet 'n sour chicken</h3>
-		<p>Spiciness: 2</p>
-		<p>$ 14</p>
-		<button>Add To Cart</button>
-	</div>
+    <div class="restaurant-card">
+        <img src="https://course-jsbasic.javascript.ru/assets/products/sweet_n_sour.png" alt="Sweet 'n Sour Chicken" />
+        <h3>Sweet 'n Sour Chicken</h3>
+        <p>Spiciness: 2 🌶️</p>
+        <p class="price">$14</p>
+        <button class="btn">Add To Cart</button>
+    </div>
 </div>
