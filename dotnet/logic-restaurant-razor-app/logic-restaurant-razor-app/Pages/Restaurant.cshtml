@@ -1,0 +1,32 @@
+﻿@page
+@model webapp.Pages.RestaurantModel
+@{
+	ViewData["Title"] = "Restaurant Page";
+}
+
+<h2>Welcome to @Model.Name!</h2>
+<div class="restaurant-container">
+	<div class="restaurant-info">
+		<img src="https://course-jsbasic.javascript.ru/assets/products/laab_kai_chicken_salad.png" alt="Alternate Text" />
+		<h3>Laab kai chicken salad</h3>
+		<p>Spiciness: 2</p>
+		<p>$ 10</p>
+		<button>Add To Cart</button>
+	</div>
+
+	<div class="restaurant-info">
+		<img src="https://course-jsbasic.javascript.ru/assets/products/som_tam_papaya_salad.png" alt="Alternate Text" />
+		<h3>Som tam papaya salad</h3>
+		<p>Spiciness: 0</p>
+		<p>$ 9.5</p>
+		<button>Add To Cart</button>
+	</div>
+
+	<div class="restaurant-info">
+		<img src="https://course-jsbasic.javascript.ru/assets/products/sweet_n_sour.png" alt="Alternate Text" />
+		<h3>Sweet 'n sour chicken</h3>
+		<p>Spiciness: 2</p>
+		<p>$ 14</p>
+		<button>Add To Cart</button>
+	</div>
+</div>
